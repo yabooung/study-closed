@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react/cjs/react.development';
-
+// fetch로 get요청 보내기
 function R059_FetchGet() {
     const [contents, getContents] =useState('')
     
