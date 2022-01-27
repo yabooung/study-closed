@@ -1,0 +1,28 @@
+#1874. 스택 수열
+#4268ms 느림
+n = int(input())
+num = []
+for i in range(n):
+    num.append(int(input()))
+
+i = 0
+x = 1
+stack = [0]
+ans = []
+while i<n:
+    if num[i] == stack[-1]:
+        stack.pop()
+        ans.append('-')
+        i += 1
+    else:
+        stack.append(x)
+        ans.append('+')
+        x += 1
+    if n+1 < x:
+        break
+
+if x > n +1:
+    print('NO')
+else:
+    for i in ans:
+        print(i)
