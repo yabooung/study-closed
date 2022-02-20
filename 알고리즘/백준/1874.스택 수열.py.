@@ -1,5 +1,6 @@
 #1874. 스택 수열
 #4268ms 느림
+# 불러오기 오류
 n = int(input())
 num = []
 for i in range(n):
